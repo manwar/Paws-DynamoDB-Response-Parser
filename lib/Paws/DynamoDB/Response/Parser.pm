@@ -15,8 +15,13 @@ Paws::DynamoDB::Response::Parser - Convert Paws DynamoDB response objects to Per
 
   use Paws::DynamoDB::Response::Parser;
 
-  my $parser = Paws::DynamoDB::Response::Parser->new;
-  my $data   = $parser->to_perl($paws_dynamodb_response);
+  my $parser   = Paws::DynamoDB::Response::Parser->new;
+  my $dynamodb = Paws->service('DynamoDB',
+     region    => 'eu-west-1',
+     endpoint  => 'http://localhost:4566'
+  );
+  my $response = $dynamodb->Scan(TableName => "Users");
+  my $data     = $parser->to_perl($response);
 
 =head1 DESCRIPTION
 
@@ -41,8 +46,6 @@ sub new {
 =head2 to_perl($response)
 
 Converts Paws DynamoDB response object to a Perl data structure.
-
-  my $result = $parser->to_perl($paws_dynamodb_response);
 
 Supported response types:
 
