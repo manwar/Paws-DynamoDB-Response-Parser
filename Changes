@@ -1,5 +1,8 @@
 Revision history for Paws::DynamoDB::Response::Parser
 
+0.04  2025-06-26T15:35:00+01:00
+      - Added GitHub repo details to pod.
+
 0.03  2025-06-26T15:07:00+01:00
       - Fixed typo in pod.
 

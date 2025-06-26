@@ -1,6 +1,6 @@
 package Paws::DynamoDB::Response::Parser;
 
-$Paws::DynamoDB::Response::Parser::VERSION   = '0.03';
+$Paws::DynamoDB::Response::Parser::VERSION   = '0.04';
 $Paws::DynamoDB::Response::Parser::AUTHORITY = 'cpan:MANWAR';
 
 use strict;
@@ -157,6 +157,10 @@ sub _unwrap_attribute {
 =head1 AUTHOR
 
 Mohammad Sajid Anwar <mohammad.anwar@yahoo.com>
+
+=head1 REPOSITORY
+
+L<https://github.com/manwar/Paws-DynamoDB-Response-Parser>
 
 =head1 BUGS
 
