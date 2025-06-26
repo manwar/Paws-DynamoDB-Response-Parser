@@ -1,4 +1,7 @@
 Revision history for Paws::DynamoDB::Response::Parser
 
+0.02  2025-06-26T15:05:00+01:00
+      - POD updated.
+
 0.01  2025-06-26T15:00:00+01:00
       - Module Created.

@@ -1,6 +1,6 @@
 package Paws::DynamoDB::Response::Parser;
 
-$Paws::DynamoDB::Response::Parser::VERSION   = '0.01';
+$Paws::DynamoDB::Response::Parser::VERSION   = '0.02';
 $Paws::DynamoDB::Response::Parser::AUTHORITY = 'cpan:MANWAR';
 
 use strict;
@@ -25,6 +25,9 @@ Paws::DynamoDB::Response::Parser - Convert Paws DynamoDB response objects to Per
   my $data     = $parser->to_perl($response);
 
 =head1 DESCRIPTION
+
+While working on the blog post for L<AWS DynamoDB|https://theweeklychallenge.org/blog/aws-dynamodb>, I had trouble
+trouble decoding the response. This is the solution to the trouble I was facing.
 
 This module converts Paws::DynamoDB response objects into native Perl data structures,
 handling all DynamoDB attribute types (S, N, B, M, L etc.).

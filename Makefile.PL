@@ -27,7 +27,7 @@ WriteMakefile(
     (eval { ExtUtils::MakeMaker->VERSION(6.46) } ? (META_MERGE => {
         'meta-spec' => { version => 2 },
         provides    => {
-            'Paws::DynamoDB::Response::Parser' => { file => 'lib/Paws/DynamoDB/Response/Parser.pm', version => '0.01' },
+            'Paws::DynamoDB::Response::Parser' => { file => 'lib/Paws/DynamoDB/Response/Parser.pm', version => '0.02' },
         },
         resources => {
             repository => {
