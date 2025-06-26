@@ -20,6 +20,7 @@ WriteMakefile(
         'Test::MockObject' => 0,
     },
     PREREQ_PM => {
+        'Data::Dumper'     => 0,
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     test  => { TESTS => 't/*.t' },
@@ -27,7 +28,7 @@ WriteMakefile(
     (eval { ExtUtils::MakeMaker->VERSION(6.46) } ? (META_MERGE => {
         'meta-spec' => { version => 2 },
         provides    => {
-            'Paws::DynamoDB::Response::Parser' => { file => 'lib/Paws/DynamoDB/Response/Parser.pm', version => '0.05' },
+            'Paws::DynamoDB::Response::Parser' => { file => 'lib/Paws/DynamoDB/Response/Parser.pm', version => '0.06' },
         },
         resources => {
             repository => {

@@ -1,5 +1,9 @@
 Revision history for Paws::DynamoDB::Response::Parser
 
+0.06  2025-06-26T16:35:00+01:00
+      - Added prereq Data::Dumper.
+      - Updated pod a bit.
+
 0.05  2025-06-26T16:05:00+01:00
       - Updated SYNOPSIS example.
 
