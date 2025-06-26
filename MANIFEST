@@ -7,3 +7,4 @@ MANIFEST.SKIP
 README
 t/00-load.t
 t/01-mock-parser.t
+t/manifest.t
