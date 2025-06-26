@@ -1,6 +1,6 @@
 package Paws::DynamoDB::Response::Parser;
 
-$Paws::DynamoDB::Response::Parser::VERSION   = '0.04';
+$Paws::DynamoDB::Response::Parser::VERSION   = '0.05';
 $Paws::DynamoDB::Response::Parser::AUTHORITY = 'cpan:MANWAR';
 
 use strict;
@@ -14,6 +14,7 @@ Paws::DynamoDB::Response::Parser - Convert Paws DynamoDB response objects to Per
 
 =head1 SYNOPSIS
 
+  use Paws;
   use Paws::DynamoDB::Response::Parser;
 
   my $parser   = Paws::DynamoDB::Response::Parser->new;
@@ -22,7 +23,7 @@ Paws::DynamoDB::Response::Parser - Convert Paws DynamoDB response objects to Per
      endpoint  => 'http://localhost:4566'
   );
   my $response = $dynamodb->Scan(TableName => "Users");
-  my $data     = $parser->to_perl($response);
+  my $result   = $parser->to_perl($response);
 
 =head1 DESCRIPTION
 
